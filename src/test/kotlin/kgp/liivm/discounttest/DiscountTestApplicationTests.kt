@@ -16,7 +16,7 @@ class DiscountTestApplicationTests : BehaviorSpec({
             val calculateDiscountCommand = CalculateDiscountCommand(
                 productCode = "PD00000001",
                 rateStartDate = LocalDate.of(2024, 9, 1),
-                BigDecimal.valueOf(10000)
+                currentAmount = BigDecimal.valueOf(10000)
             )
 
             val result = discount.calculate(calculateDiscountCommand)
@@ -30,7 +30,7 @@ class DiscountTestApplicationTests : BehaviorSpec({
             val calculateDiscountCommand = CalculateDiscountCommand(
                 productCode = "PD00000001",
                 rateStartDate = LocalDate.of(2024, 8, 31),
-                BigDecimal.valueOf(10000)
+                currentAmount = BigDecimal.valueOf(10000)
             )
 
             val result = discount.calculate(calculateDiscountCommand)
@@ -44,7 +44,7 @@ class DiscountTestApplicationTests : BehaviorSpec({
             val calculateDiscountCommand = CalculateDiscountCommand(
                 productCode = "PD00000001",
                 rateStartDate = LocalDate.of(2024, 10, 1),
-                BigDecimal.valueOf(10000)
+                currentAmount = BigDecimal.valueOf(10000)
             )
 
             val result = discount.calculate(calculateDiscountCommand)
@@ -58,7 +58,7 @@ class DiscountTestApplicationTests : BehaviorSpec({
             val calculateDiscountCommand = CalculateDiscountCommand(
                 productCode = "PD00000004",
                 rateStartDate = LocalDate.of(2024, 9, 1),
-                BigDecimal.valueOf(10000)
+                currentAmount = BigDecimal.valueOf(10000)
             )
 
             val result = discount.calculate(calculateDiscountCommand)
@@ -76,7 +76,7 @@ class DiscountTestApplicationTests : BehaviorSpec({
             val calculateDiscountCommand = CalculateDiscountCommand(
                 productCode = "PD00000001",
                 rateStartDate = LocalDate.of(2024, 9, 1),
-                BigDecimal.valueOf(10000)
+                currentAmount = BigDecimal.valueOf(10000)
             )
 
             val result = discount.calculate(calculateDiscountCommand)
